@@ -1,0 +1,67 @@
+.pinkLinearGrid {
+    -fx-background-color:  linear-gradient(#d902ee, #320d3e);
+}
+
+.roundCorners{
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+}
+
+.roundButton{
+    -fx-background-radius: 5em;
+    -fx-min-width: 25;
+    -fx-min-height: 25;
+    -fx-max-width: 25;
+    -fx-max-height: 25;
+    -fx-background-color: -fx-body-color;
+    -fx-background-insets: 0px;
+    -fx-padding: 0px;
+}
+
+.borderButtons{
+    -fx-border-width: 2;
+    -fx-border-color: #681882;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+/* border */
+.transparent-border{
+    -fx-background-radius: 5em;
+    -fx-background-color: -fx-body-color;
+    -fx-background-insets: 0px;
+    -fx-padding: 13px;
+    border-radius: 50px;
+}
+
+* {
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+
+    -fx-border-radius: 0;
+    -fx-border-insets: 0;
+}
+
+/* presentation tab */
+
+.tab {
+    -fx-background-color: transparent, tab-border-color , tab-color;
+    tab-color: linear-gradient(light-tab-color, dark-tab-color) ;
+    tab-border-color : dark-tab-color ;
+    dark-tab-color: #A3A300 ;
+    light-tab-color: #FFFF00 ;
+    -fx-background-insets: 0, 0 5 0 0, 1 6 0 0 ;
+    -fx-padding: 4 10 4 4 ;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.tab:hover {
+    tab-color: light-tab-color ;
+}
+
+.tab:selected{
+    tab-color: dark-tab-color;
+}

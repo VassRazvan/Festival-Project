@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="myAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="742.0" prefWidth="921.0" styleClass="pinkLinearGrid" stylesheets="@../css/LogIn.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+   <BorderPane fx:id="titleBorderPane" layoutX="-6.0" layoutY="8.0" prefHeight="41.0" prefWidth="921.0" stylesheets="@../css/LogIn.css" AnchorPane.bottomAnchor="701.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <right>
+         <Button mnemonicParsing="false" onAction="#closeWindow" style="-fx-background-color: #3c0c49;" styleClass="roundButton" stylesheets="@../css/LogIn.css" text="X" textFill="WHITE" BorderPane.alignment="TOP_RIGHT">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+            <BorderPane.margin>
+               <Insets right="3.0" top="3.0" />
+            </BorderPane.margin>
+         </Button>
+      </right>
+      <center>
+         <Button maxHeight="26.0" maxWidth="28.0" mnemonicParsing="false" onAction="#minimizeWindow" prefHeight="26.0" prefWidth="28.0" style="-fx-background-color: #3c0c49;" styleClass="roundButton" stylesheets="@../css/LogIn.css" text="-" textFill="WHITE" BorderPane.alignment="TOP_RIGHT">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+            <BorderPane.margin>
+               <Insets right="3.0" top="3.0" />
+            </BorderPane.margin>
+         </Button>
+      </center>
+   </BorderPane>
+   <Button layoutX="36.0" layoutY="41.0" mnemonicParsing="false" onAction="#logOut" styleClass="transparent-border" text="Log Out" />
+   <ListView fx:id="allShows" layoutX="592.0" layoutY="269.0" prefHeight="282.0" prefWidth="242.0" />
+   <Label layoutX="673.0" layoutY="229.0" text="Shows">
+      <font>
+         <Font size="28.0" />
+      </font>
+   </Label>
+   <DatePicker fx:id="datePicker" layoutX="227.0" layoutY="129.0" prefHeight="26.0" prefWidth="173.0" />
+   <Label layoutX="36.0" layoutY="127.0" text="Search artist by day:">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Button layoutX="209.0" layoutY="507.0" mnemonicParsing="false" onAction="#searchByDay" styleClass="transparent-border" text="Search" />
+   <ListView fx:id="dayList" layoutX="119.0" layoutY="209.0" prefHeight="282.0" prefWidth="242.0" />
+   <TextField fx:id="buyerName" layoutX="679.0" layoutY="129.0" prefHeight="26.0" prefWidth="205.0" />
+   <TextField fx:id="numberOfSeats" layoutX="720.0" layoutY="176.0" prefHeight="26.0" prefWidth="165.0" />
+   <Label layoutX="552.0" layoutY="126.0" text="Client name:">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label layoutX="549.0" layoutY="174.0" text="Number of seats:">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label layoutX="178.0" layoutY="169.0" text="Day Show">
+      <font>
+         <Font size="28.0" />
+      </font>
+   </Label>
+   <Button layoutX="682.0" layoutY="571.0" mnemonicParsing="false" onAction="#buyTickets" styleClass="transparent-border" text="Buy" />
+</AnchorPane>

@@ -1,0 +1,9 @@
+rootProject.name = 'FestivalCS'
+include 'Domain'
+include 'Repository'
+include 'Service'
+include 'Ui'
+include 'Networking'
+include 'Server'
+include 'RestServices'
+
