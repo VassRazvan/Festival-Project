@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+
+    implementation group: 'com.google.protobuf', name: 'protobuf-java', version: '3.18.2'
+
+    implementation project (':Domain')
+    implementation project (':Service')
+}
+
+test {
+    useJUnitPlatform()
+}
